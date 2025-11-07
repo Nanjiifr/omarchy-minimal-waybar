@@ -1,0 +1,121 @@
+@import "../omarchy/current/theme/waybar.css";
+
+* {
+  background-color: transparent;
+  color: @foreground;
+  border: none;
+  border-radius: 16px;
+  min-height: 0;
+  padding: 0;
+  margin: 0;
+  font-family: 'CaskaydiaMono Nerd Font';
+  font-size: 12px;
+}
+
+#custom-omarchy,
+#workspaces,
+#window {
+  background: @background;
+  padding: 0 8px;
+  margin: 0;
+  margin-top: 0px;
+}
+
+.modules-center {
+  padding: 0;
+  background: @background;
+}
+
+.modules-right {
+  margin-right: 8px;
+  background: @background;
+  padding: 5px 2px 5px 10px;
+}
+
+#workspaces button {
+  all: initial;
+  padding: 0 6px;
+  margin: 0 1.5px;
+  min-width: 9px;
+}
+
+#workspaces button.empty { opacity: 0.5; }
+
+window#waybar {
+  background-color: transparent;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+  border-color: transparent;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+#window {
+  margin-left: 8px;
+  margin-right: 8px;
+  padding: 0 8px 0 10px;
+}
+
+#cpu,
+#battery,
+#pulseaudio,
+#custom-omarchy,
+#custom-screenrecording-indicator,
+#custom-update {
+  min-width: 12px;
+  margin: 0 7.5px;
+}
+
+#tray { margin-right: 16px; }
+#bluetooth { margin-right: 17px; }
+#network { margin-right: 13px; }
+#custom-expand-icon { margin-right: 20px; }
+
+tooltip {
+  margin-left: 8px;            /* marge par défaut (n'affecte pas la logique d'affichage) */
+  margin-right: 0;
+  background-color: @background;
+  color: @foreground;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 11px;
+}
+
+.modules-right > * tooltip {
+  margin-left: 0;
+  margin-right: 8px;
+}
+
+.hidden { opacity: 0; }
+
+#clock {
+  margin-left: 8.75px;
+  padding: 5px 5px 5px;
+  padding-right: 12px;
+}
+
+#custom-screenrecording-indicator {
+  min-width: 12px;
+  margin-left: 8.75px;
+  font-size: 10px;
+}
+
+#custom-screenrecording-indicator.active { color: #a55555; }
+
+#custom-update { font-size: 10px; }
+
+#custom-omarchy {
+  border-radius: 16px 0 0 16px;
+  margin-right: 0;
+  padding-right: 0;
+  padding-left: 10px;
+}
+
+#workspaces {
+  border-radius: 0 16px 16px 0;
+  margin-left: 0;
+}
