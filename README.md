@@ -10,6 +10,6 @@ chmod +x install.sh
 chmod +x uninstall.sh
 ./install.sh
 ```
-
+You can now just reload the waybar by pressing `SUPER + Maj + Space` twice
 ## Uninstall
 If you are unhappy with the waybar config, you can always restore the previous configuration (stored in `~/.config/waybar.bak`) by running `./uninstall.sh`

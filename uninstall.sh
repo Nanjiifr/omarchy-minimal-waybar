@@ -1,3 +1,3 @@
 #!/bin/bash
 
-mv ~/.config/waybar.bak ~/.config/waybar.bak
+mv ~/.config/waybar.bak ~/.config/waybar
